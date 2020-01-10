@@ -116,3 +116,7 @@ export default class Example extends Component {
 - [React Documentation: Components](https://reactjs.org/docs/react-component.html)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-dynamic-components-lab'>Dynamic Components Lab</a> on Learn.co and start learning to code for free.</p>
+
+      <div className="color-box" style={{opacity: this.props.opacity}}>   //Note: The style attribute accepts a JavaScript object with camelCased properties rather than a CSS string
+        { this.props.opacity >= 0.2 ? <ColorBox opacity={this.props.opacity - 0.1} /> : null }
+      </div>
