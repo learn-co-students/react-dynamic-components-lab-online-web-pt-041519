@@ -1,0 +1,639 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200110.111947.6571.0.001.json",
+    "dumpEventTime": "2020-01-10T11:19:47Z",
+    "dumpEventTimeStamp": "1578676787411",
+    "processId": 6571,
+    "cwd": "/Users/alexmerecka/Software-Programming/FlatIron-Labs/react-dynamic-components-lab-online-web-pt-041519",
+    "commandLine": [
+      "/usr/local/Cellar/node/12.10.0/bin/node",
+      "/Users/alexmerecka/Software-Programming/FlatIron-Labs/react-dynamic-components-lab-online-web-pt-041519/node_modules/mocha/bin/_mocha",
+      "--timeout",
+      "10000",
+      "--compilers",
+      "js:babel-register",
+      "-w",
+      "test/helpers.js",
+      "test/helpers.js",
+      "test/index-test.js"
+    ],
+    "nodejsVersion": "v12.10.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "12.10.0",
+      "v8": "7.6.303.29-node.16",
+      "uv": "1.31.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "15.6.0",
+    "osVersion": "Darwin Kernel Version 15.6.0: Thu Jun 21 20:07:40 PDT 2018; root:xnu-3248.73.11~1/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz",
+        "speed": 2400,
+        "user": 14370210,
+        "nice": 0,
+        "sys": 8425170,
+        "idle": 70981070,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz",
+        "speed": 2400,
+        "user": 2347220,
+        "nice": 0,
+        "sys": 682310,
+        "idle": 90036940,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz",
+        "speed": 2400,
+        "user": 12303100,
+        "nice": 0,
+        "sys": 3858370,
+        "idle": 76905080,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz",
+        "speed": 2400,
+        "user": 2380680,
+        "nice": 0,
+        "sys": 714890,
+        "idle": 89970880,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz",
+        "speed": 2400,
+        "user": 12081220,
+        "nice": 0,
+        "sys": 3676070,
+        "idle": 77309230,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz",
+        "speed": 2400,
+        "user": 2398810,
+        "nice": 0,
+        "sys": 727050,
+        "idle": 89940570,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz",
+        "speed": 2400,
+        "user": 11998640,
+        "nice": 0,
+        "sys": 3596360,
+        "idle": 77471500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz",
+        "speed": 2400,
+        "user": 2412000,
+        "nice": 0,
+        "sys": 732820,
+        "idle": 89921590,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en1",
+        "internal": false,
+        "mac": "68:a8:6d:3d:9b:be",
+        "address": "fe80::6aa8:6dff:fe3d:9bbe",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      },
+      {
+        "name": "en1",
+        "internal": false,
+        "mac": "68:a8:6d:3d:9b:be",
+        "address": "192.168.1.12",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "en4",
+        "internal": false,
+        "mac": "0b:0b:0b:0b:0b:0b",
+        "address": "fe80::3e07:54ff:fe6c:3db7",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      },
+      {
+        "name": "en4",
+        "internal": false,
+        "mac": "0b:0b:0b:0b:0b:0b",
+        "address": "169.254.39.229",
+        "netmask": "255.255.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Alexs-MacBook-Pro.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000100148cd0",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010007ae95",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100172605",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001001725af",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001002901ab",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010029156e",
+      "symbol": "v8::internal::Heap::MarkCompactPrologue() [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010028f028",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010028d924",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100295407",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetry(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010029545c",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001002730c1",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001004c1e2c",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100748ff9",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001006c367b",
+      "symbol": "Builtins_FastNewObject [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001006c310f",
+      "symbol": "Builtins_JSConstructStubGeneric [/usr/local/Cellar/node/12.10.0/bin/node]"
+    },
+    {
+      "pc": "0x00000f163f6b1a6e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00000f163f6b7659",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2168762368,
+    "totalCommittedMemory": 2158637696,
+    "usedMemory": 2151151744,
+    "availableMemory": 42846024,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 31744,
+        "capacity": 261832,
+        "used": 31432,
+        "available": 230400
+      },
+      "new_space": {
+        "memorySize": 13631488,
+        "committedMemory": 4457848,
+        "capacity": 6807632,
+        "used": 1395560,
+        "available": 5412072
+      },
+      "old_space": {
+        "memorySize": 2101194752,
+        "committedMemory": 2100672800,
+        "capacity": 2098654456,
+        "used": 2097311464,
+        "available": 1342992
+      },
+      "code_space": {
+        "memorySize": 688128,
+        "committedMemory": 673088,
+        "capacity": 455296,
+        "used": 455296,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2101248,
+        "committedMemory": 1917608,
+        "capacity": 1144320,
+        "used": 1144320,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 50835456,
+        "committedMemory": 50835456,
+        "capacity": 50810216,
+        "used": 50810216,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 6807632,
+        "used": 0,
+        "available": 6807632
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 86.8425,
+    "kernelCpuSeconds": 11.1576,
+    "cpuConsumptionPercent": 9.8691,
+    "maxRss": 2307076915200,
+    "pageFaults": {
+      "IORequired": 44,
+      "IONotRequired": 708340
+    },
+    "fsActivity": {
+      "reads": 1,
+      "writes": 4
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "npm_config_save_dev": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_dry_run": "",
+    "npm_package_babel_presets_3": "react",
+    "npm_config_viewer": "man",
+    "npm_config_only": "",
+    "npm_config_commit_hooks": "true",
+    "npm_config_browser": "",
+    "npm_package_gitHead": "bb713f882ecbdc3ed81615037527302f35834f32",
+    "npm_package_babel_presets_2": "stage-0",
+    "npm_config_also": "",
+    "npm_package_babel_presets_1": "env",
+    "npm_config_sign_git_commit": "",
+    "npm_config_rollback": "true",
+    "npm_package_babel_presets_0": "airbnb",
+    "TERM_PROGRAM": "Apple_Terminal",
+    "rvm_bin_path": "/Users/alexmerecka/.rvm/bin",
+    "NODE": "/usr/local/Cellar/node/12.10.0/bin/node",
+    "npm_config_usage": "",
+    "npm_config_audit": "true",
+    "INIT_CWD": "/Users/alexmerecka/Software-Programming/FlatIron-Labs/react-dynamic-components-lab-online-web-pt-041519",
+    "npm_package_devDependencies_sinon": "^6.1.0",
+    "GEM_HOME": "/Users/alexmerecka/.rvm/gems/ruby-2.6.1",
+    "npm_config_globalignorefile": "/usr/local/etc/npmignore",
+    "npm_package_devDependencies_mocha": "^5.2.0",
+    "SHELL": "/bin/bash",
+    "TERM": "xterm-256color",
+    "npm_config_shell": "/bin/bash",
+    "npm_config_maxsockets": "50",
+    "npm_config_init_author_url": "",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_parseable": "",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "TMPDIR": "/var/folders/2v/86g_st3x4gz5mp2tyxn3rshc0000gn/T/",
+    "IRBRC": "/Users/alexmerecka/.rvm/rubies/ruby-2.6.1/.irbrc",
+    "npm_config_timing": "",
+    "npm_config_init_license": "ISC",
+    "Apple_PubSub_Socket_Render": "/private/tmp/com.apple.launchd.TTpKScd911/Render",
+    "npm_config_if_present": "",
+    "npm_package_devDependencies_babel_core": "^6.26.3",
+    "TERM_PROGRAM_VERSION": "361.2",
+    "npm_package_dependencies_mocha_multi": "^1.0.1",
+    "npm_config_sign_git_tag": "",
+    "npm_config_init_author_email": "",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_preid": "",
+    "npm_config_long": "",
+    "npm_config_local_address": "",
+    "npm_config_git_tag_version": "true",
+    "npm_config_cert": "",
+    "TERM_SESSION_ID": "B722CE23-EEEC-4F50-A578-0DAF27708F92",
+    "MY_RUBY_HOME": "/Users/alexmerecka/.rvm/rubies/ruby-2.6.1",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_noproxy": "",
+    "npm_config_fetch_retries": "2",
+    "npm_package_private": "true",
+    "npm_package_dependencies_react_dom": "^16.4.2",
+    "npm_config_versions": "",
+    "npm_config_message": "%s",
+    "npm_config_key": "",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_devDependencies_babel_preset_stage_0": "^6.24.1",
+    "GIT_EDITOR": "atom",
+    "npm_package_description": "## Objectives",
+    "USER": "alexmerecka",
+    "SVN_EDITOR": "atom",
+    "npm_package_devDependencies_enzyme_adapter_react_16": "^1.1.1",
+    "USR_PATHS": "/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin",
+    "npm_config_globalconfig": "/usr/local/etc/npmrc",
+    "npm_config_prefer_online": "",
+    "npm_config_logs_max": "10",
+    "npm_config_always_auth": "",
+    "rvm_path": "/Users/alexmerecka/.rvm",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.vcECxKY0t3/Listeners",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+    "npm_execpath": "/usr/local/lib/node_modules/npm/bin/npm-cli.js",
+    "npm_config_global_style": "",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_update_notifier": "true",
+    "npm_config_cafile": "",
+    "npm_package_devDependencies_babel_preset_react": "^6.24.1",
+    "npm_config_heading": "npm",
+    "npm_config_audit_level": "low",
+    "npm_config_searchlimit": "20",
+    "npm_config_read_only": "",
+    "npm_config_offline": "",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "rvm_prefix": "/Users/alexmerecka",
+    "npm_config_json": "",
+    "npm_config_access": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"test\"],\"original\":[\"test\"]}",
+    "PATH": "/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/alexmerecka/Software-Programming/FlatIron-Labs/react-dynamic-components-lab-online-web-pt-041519/node_modules/.bin:/Users/alexmerecka/.rvm/gems/ruby-2.6.1/bin:/Users/alexmerecka/.rvm/gems/ruby-2.6.1@global/bin:/Users/alexmerecka/.rvm/rubies/ruby-2.6.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/alexmerecka/.rvm/bin",
+    "npm_config_allow_same_version": "",
+    "npm_package_dependencies_webpack": "^3.11.0",
+    "npm_config_https_proxy": "",
+    "npm_config_engine_strict": "",
+    "npm_config_description": "true",
+    "_": "/Users/alexmerecka/Software-Programming/FlatIron-Labs/react-dynamic-components-lab-online-web-pt-041519/node_modules/.bin/mocha",
+    "npm_config_userconfig": "/Users/alexmerecka/.npmrc",
+    "npm_config_init_module": "/Users/alexmerecka/.npm-init.js",
+    "npm_config_cidr": "",
+    "PWD": "/Users/alexmerecka/Software-Programming/FlatIron-Labs/react-dynamic-components-lab-online-web-pt-041519",
+    "npm_config_user": "",
+    "npm_config_node_version": "12.10.0",
+    "npm_lifecycle_event": "test",
+    "npm_package_devDependencies_chai": "^4.1.2",
+    "EDITOR": "atom",
+    "npm_config_save": "true",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_editor": "atom",
+    "npm_config_auth_type": "legacy",
+    "npm_package_name": "react-dynamic-components-lab",
+    "LANG": "en_US.UTF-8",
+    "npm_config_tag": "latest",
+    "npm_config_script_shell": "",
+    "npm_config_progress": "true",
+    "npm_config_global": "",
+    "npm_config_before": "",
+    "npm_package_scripts_build": "react-scripts build",
+    "npm_package_scripts_start": "react-scripts start",
+    "NODE_PATH": "/usr/local/lib/node_modules:",
+    "npm_config_searchstaleness": "900",
+    "npm_config_optional": "true",
+    "npm_config_ham_it_up": "",
+    "XPC_FLAGS": "0x0",
+    "npm_config_save_prod": "",
+    "npm_config_force": "",
+    "npm_config_bin_links": "true",
+    "npm_package_devDependencies_enzyme": "^3.3.0",
+    "npm_config_searchopts": "",
+    "GIT_MERGE_AUTOEDIT": "no",
+    "npm_config_node_gyp": "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "npm_config_depth": "Infinity",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_rebuild_bundle": "true",
+    "npm_package_devDependencies_babel_preset_airbnb": "^2.5.1",
+    "npm_package_version": "0.1.0",
+    "XPC_SERVICE_NAME": "0",
+    "npm_config_unicode": "true",
+    "rvm_version": "1.29.8-next (master)",
+    "SHLVL": "2",
+    "HOME": "/Users/alexmerecka",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_package_scripts_test": "mocha -w test/helpers.js test/*.js",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_strict_ssl": "true",
+    "npm_config_sso_type": "oauth",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_save_prefix": "^",
+    "npm_config_loglevel": "notice",
+    "npm_config_ca": "",
+    "npm_config_save_exact": "",
+    "npm_config_group": "20",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_dev": "",
+    "npm_config_version": "",
+    "npm_config_prefer_offline": "",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_otp": "",
+    "npm_config_cache_min": "10",
+    "npm_package_devDependencies_babel_preset_env": "^1.7.0",
+    "npm_config_searchexclude": "",
+    "npm_config_cache": "/Users/alexmerecka/.npm",
+    "npm_package_dependencies_react_scripts": "^1.1.5",
+    "LOGNAME": "alexmerecka",
+    "npm_lifecycle_script": "mocha -w test/helpers.js test/*.js",
+    "npm_config_color": "true",
+    "VISUAL": "atom",
+    "npm_config_proxy": "",
+    "npm_config_package_lock": "true",
+    "GEM_PATH": "/Users/alexmerecka/.rvm/gems/ruby-2.6.1:/Users/alexmerecka/.rvm/gems/ruby-2.6.1@global",
+    "npm_config_package_lock_only": "",
+    "npm_package_dependencies_react": "^16.4.1",
+    "npm_config_save_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_user_agent": "npm/6.11.3 node/v12.10.0 darwin x64",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_production": "",
+    "FLATIRON_VERSION": "1.1.1",
+    "npm_config_send_metrics": "",
+    "npm_config_save_bundle": "",
+    "npm_config_umask": "0022",
+    "npm_config_node_options": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_init_author_name": "",
+    "npm_config_git": "git",
+    "npm_config_scope": "",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "RUBY_VERSION": "ruby-2.6.1",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_tmp": "/var/folders/2v/86g_st3x4gz5mp2tyxn3rshc0000gn/T",
+    "npm_config_onload_script": "",
+    "npm_node_execpath": "/usr/local/Cellar/node/12.10.0/bin/node",
+    "npm_config_link": "",
+    "npm_config_prefix": "/usr/local",
+    "LOADED_MOCHA_OPTS": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 10240,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 709,
+      "hard": 1064
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/usr/local/Cellar/node/12.10.0/bin/node",
+    "/usr/local/opt/icu4c/lib/libicui18n.64.dylib",
+    "/usr/local/opt/icu4c/lib/libicuuc.64.dylib",
+    "/usr/local/opt/icu4c/lib/libicudata.64.dylib",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_coretls.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_network.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunc.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libauto.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib"
+  ]
+}
